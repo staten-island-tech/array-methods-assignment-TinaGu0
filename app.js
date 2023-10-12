@@ -1,21 +1,37 @@
-const obsydiaArr = [
+const obsydia = [
     {
-        firstname : Petra,
-        lastname : Gurin,
+        firstname : "Petra",
+        lastname : "Gurin",
         height : 152,
-        groupleader : false,
+        groupmembers : ["Selen" , "Rosemi"]
     } ,
     {
-        firstname : Selen, 
-        lastname : Tatsuki,
+        firstname : "Selen", 
+        lastname : "Tatsuki",
         height : 160,
-        groupleader : false
+        groupmembers : ["Petra" , "Rosemi"]
     } ,
-    rosemi = {
-        firstname : Rosemi,
-        lastname : Lovelock,
+    {
+        firstname : "Rosemi",
+        lastname : "Lovelock",
         height : 150,
-        groupleader : true
+        groupmembers : ["Petra" , "Selen"]
     } 
-]
-console.log(obsydia)
+];
+
+obsydia.forEach(function(obsydia) {
+    console.log(obsydia.firstname)
+}
+);
+
+obsydia.forEach(function(obsydia) {
+    console.log(obsydia.groupmembers)
+}
+);
+
+
+//:D? fix this tmr in class?? 
+obsydia.filter(function(obsydia) {
+    console.log(obsydia.groupmembers)
+}
+)
